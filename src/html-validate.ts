@@ -33,3 +33,7 @@ export {
   ruleExists,
   version
 } from 'html-validate/dist/es/browser.js'
+
+export type {
+  ConfigData
+} from 'html-validate/dist/es/browser.js'

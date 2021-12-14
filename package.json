@@ -1,0 +1,26 @@
+{
+  "name": "html-validate-es",
+  "version": "0.1.1",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "import": "./dist/html-validate.mjs",
+    "require": "./dist/html-validate.cjs"
+  },
+  "main": "./dist/html-validate.cjs",
+  "module": "./dist/html-validate.mjs",
+  "types": "./dist/html-validate.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepack": "unbuild",
+    "test": "yarn build && node ./test.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "^6.1.4",
+    "unbuild": "^0.6.7"
+  }
+}
